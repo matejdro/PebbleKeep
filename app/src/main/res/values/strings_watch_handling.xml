@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="watch_app_outdated">keePebble watchapp outdated</string>
+    <string name="phone_app_outdated">keePebble phone app outdated</string>
+    <string name="phone_update_prompt">Tap this link to get the latest update.</string>
+    <string name="watch_app_update_prompt">Un-install and re-install app from the Pebble App Store to force update.</string>
+
+    <string name="opening_pebble_store_failed">Opening Pebble App Store failed. Do you have Pebble Time app installed?</string>
+</resources>

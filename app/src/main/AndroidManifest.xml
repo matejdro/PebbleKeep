@@ -16,7 +16,16 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".KeepTalkerService" />
+        <service android:name=".pebble.KeepTalkerService" />
+
+        <receiver android:name=".pebble.WatchappHandler">
+            <intent-filter>
+                <action android:name="com.matejdro.pebblekeep.UPDATE_WATCHAPP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.matejdro.pebblekeep.UPDATE_PHONE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

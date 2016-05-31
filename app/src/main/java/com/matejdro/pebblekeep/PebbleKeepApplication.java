@@ -2,8 +2,11 @@ package com.matejdro.pebblekeep;
 
 import com.matejdro.pebblecommons.PebbleCompanionApplication;
 import com.matejdro.pebblecommons.pebble.PebbleTalkerService;
+import com.matejdro.pebblekeep.pebble.KeepTalkerService;
 
 import java.util.UUID;
+
+import timber.log.Timber;
 
 /**
  * Created by Matej on 31. 05. 2016.
@@ -19,5 +22,13 @@ public class PebbleKeepApplication extends PebbleCompanionApplication {
     @Override
     public Class<? extends PebbleTalkerService> getTalkerServiceClass() {
         return KeepTalkerService.class;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        Timber.setAppTag("PebbleNotificationCenter");
+        Timber.plant(new Timber.AppTaggedDebugTree());
     }
 }
