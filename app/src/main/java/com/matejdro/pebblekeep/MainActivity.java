@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.matejdro.pebblecommons.util.RootUtil;
 
+import timber.log.Timber;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
