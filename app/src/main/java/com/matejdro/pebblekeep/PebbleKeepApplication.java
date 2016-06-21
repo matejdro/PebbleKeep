@@ -28,7 +28,7 @@ public class PebbleKeepApplication extends PebbleCompanionApplication {
     public void onCreate() {
         super.onCreate();
 
-        Timber.setAppTag("PebbleNotificationCenter");
+        Timber.setAppTag("PebbleKeep");
         Timber.plant(new Timber.AppTaggedDebugTree());
     }
 }
