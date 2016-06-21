@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">PebbleKeep</string>
+    <string name="error_device_not_rooted">Device not rooted</string>
+    <string name="error_not_rooted_message">Sorry, to use this app, your device needs to be rooted.</string>
+    <string name="button_exit">Exit</string>
 </resources>
